@@ -1,3 +1,4 @@
+  
 FILE=$1
 
 mkdir -p ../datasets
@@ -9,4 +10,3 @@ wget -N $URL -O $TAR_FILE
 mkdir $TARGET_DIR
 tar -zxvf $TAR_FILE -C ../datasets/
 rm $TAR_FILE
-
