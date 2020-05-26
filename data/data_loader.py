@@ -440,10 +440,7 @@ class DataLoader(BaseDataLoader):
         dict_inds = {}
         test_dict = opt.dataroot+'/test_dict/dict.pkl'
         if opt.phase=='test':
-            if os.path.isfile(test_dict):
-                dict_inds = pickle.load(open(test_dict))
-            else:
-                warnings.warn('Blanks in test data are random. create a pkl file in ~/data_path/test_dict/dict.pkl including predifined random indices')
+            warnings.warn('Blanks in test data are random. create a pkl file in ~/data_path/test_dict/dict.pkl including predifined random indices')
 
 
 
